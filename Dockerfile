@@ -17,4 +17,4 @@ COPY flask_app.py .
 EXPOSE 8001
 
 # Command to run the application using Gunicorn
-CMD ["gunicorn", "-b", "0.0.0.0:8001", "falsk_app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8001", "flask_app:app"]
