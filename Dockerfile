@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code into the container
 COPY flask_app.py .
-COPY template/ ./template
+#COPY template/ ./template
 
 # Expose the port that the app runs on
 EXPOSE 8001
