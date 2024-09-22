@@ -16,5 +16,5 @@ COPY flask_app.py .
 # Expose the port that the app runs on
 EXPOSE 8001
 
-# Command to run the application using Gunicorn
-CMD ["gunicorn", "-b", "0.0.0.0:8001", "flask_app:app"]
+# Command to run the application
+CMD ["python", "flask_app.py"]
